@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Satisficed Consulting</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+</head>
+<body>
+
+<nav class="solid">
+  <div class="wrap">
+    <div class="logo"><img src="assets/logo-mark.png" alt="Satisficed mark">
+      <div class="logo-text">
+        <span class="logo-word">SATISFICED</span>
+        <span class="logo-tagline">DECIDED WELL<span class="sep">&#8226;</span>STOPPED ON PURPOSE<span class="sep">&#8226;</span>DELIVERED ON TIME</span>
+      </div>
+    </div>
+    <div class="navlinks">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="work.html">Work</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active nav-cta">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="page-header">
+  <div class="wrap">
+    <div class="eyebrow mono">Contact</div>
+    <h1>Have a problem worth solving properly?</h1>
+    <p class="lede">Tell me what's not working. If it's a fit, we'll figure out the fastest real path to fixing it — not the longest billable one.</p>
+  </div>
+</header>
+
+<section class="section">
+  <div class="wrap">
+    <div class="contact-grid fade-in">
+      <div class="contact-lead">
+        <h2>Get in touch</h2>
+        <p>Based in Bengaluru, working with clients across India and remotely worldwide. Usually the fastest way to start is a short call — no deck required.</p>
+        <div class="contact-detail">
+          <div class="row"><span>Email</span><a href="mailto:hello@satisficedconsulting.com">hello@satisficedconsulting.com</a></div>
+          <div class="row"><span>Location</span>Bengaluru, Karnataka, India</div>
+          <div class="row"><span>LinkedIn</span><a href="https://www.linkedin.com/in/thrupthibs/" target="_blank">Connect on LinkedIn</a></div>
+        </div>
+      </div>
+
+      <div>
+        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html">
+          <input type="hidden" name="form-name" value="contact"/>
+          <p style="display:none;"><label>Don't fill this out: <input name="bot-field"/></label></p>
+          <div class="form-group">
+            <label>Name</label>
+            <input type="text" name="name" required>
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label>What's the problem?</label>
+            <textarea name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn" style="border:none; cursor:pointer;">Send message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap" style="display:flex; justify-content:space-between; width:100%; flex-wrap:wrap; gap:16px;">
+    <span>© 2026 Satisficed Consulting. Bengaluru, India.</span>
+    <span><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></span>
+  </div>
+</footer>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services — Satisficed Consulting</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+</head>
+<body>
+
+<nav class="solid">
+  <div class="wrap">
+    <div class="logo"><img src="assets/logo-mark.png" alt="Satisficed mark">
+      <div class="logo-text">
+        <span class="logo-word">SATISFICED</span>
+        <span class="logo-tagline">DECIDED WELL<span class="sep">&#8226;</span>STOPPED ON PURPOSE<span class="sep">&#8226;</span>DELIVERED ON TIME</span>
+      </div>
+    </div>
+    <div class="navlinks">
+      <a href="index.html">Home</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="work.html">Work</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="nav-cta">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="page-header">
+  <div class="wrap">
+    <div class="eyebrow mono">Services</div>
+    <h1>Practical help, sized to the actual problem.</h1>
+    <p class="lede">Three areas of work, each one able to stand alone — but they compound when run together, since the operating model, the automation, and the delivery plan all touch the same process.</p>
+  </div>
+</header>
+
+<section class="section">
+  <div class="wrap">
+
+    <div class="svc-block fade-in">
+      <div>
+        <div class="svc-num mono">01</div>
+        <div class="svc-title">Operations Management</div>
+      </div>
+      <div class="svc-body">
+        <p>Most operational drag isn't a strategy problem — it's an unclear process, an unowned handoff, or a step nobody's questioned in years. This work starts by mapping how the operation actually runs today, not how the org chart says it should, and finding the one or two constraints that are genuinely costing time and money.</p>
+        <p>Typical outputs: a clear process map, a shortlist of fixable bottlenecks, and a prioritised plan — not a 40-slide operating model nobody will open twice.</p>
+        <div class="svc-list">
+          <span>Process mapping & audits</span>
+          <span>RACI & governance design</span>
+          <span>Cost & time-to-serve analysis</span>
+          <span>Vendor & tooling review</span>
+        </div>
+        <p class="svc-echo mono"><b>Decided well.</b> Stopped on purpose. Delivered on time.</p>
+      </div>
+    </div>
+
+    <div class="svc-block fade-in">
+      <div>
+        <div class="svc-num mono">02</div>
+        <div class="svc-title">Process Automation</div>
+      </div>
+      <div class="svc-body">
+        <p>Once the real constraint is clear, the fix is usually a workflow, an integration, or a small custom tool — not a platform overhaul. Work here has ranged from Google Sheets–backed internal apps with role-based access, to Power Platform (PowerApps + Power Automate) solutions, to Make.com and API-driven automation connecting existing tools.</p>
+        <p>The goal is always the same: remove the manual step, keep the system simple enough that the client's own team can run it without a consultant on retainer.</p>
+        <div class="svc-list">
+          <span>Google Apps Script</span>
+          <span>Power Automate & PowerApps</span>
+          <span>Make.com workflows</span>
+          <span>Custom internal tools</span>
+          <span>API integrations</span>
+        </div>
+        <p class="svc-echo mono">Decided well. <b>Stopped on purpose.</b> Delivered on time.</p>
+      </div>
+    </div>
+
+    <div class="svc-block fade-in">
+      <div>
+        <div class="svc-num mono">03</div>
+        <div class="svc-title">Programme & Project Delivery</div>
+      </div>
+      <div class="svc-body">
+        <p>An automation or process fix only creates value if it actually gets adopted — which is a delivery and change problem as much as a technical one. This is where structured programme management comes in: governance, milestone tracking, stakeholder alignment, and a rollout plan that accounts for how people actually work, not just how the system is designed to work.</p>
+        <p>Drawing on large-scale delivery experience — including governance across roughly 40–50 client accounts within a 170+ client ServiceNow platform migration — applied at whatever scale the engagement actually needs.</p>
+        <div class="svc-list">
+          <span>PMP-based delivery frameworks</span>
+          <span>SAFe Agile</span>
+          <span>ITIL-aligned service transition</span>
+          <span>Change management & adoption</span>
+        </div>
+        <p class="svc-echo mono">Decided well. Stopped on purpose. <b>Delivered on time.</b></p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="wrap contact-inner fade-in">
+    <div class="tag mono" style="margin-bottom:20px;">Not sure which of these fits?</div>
+    <h2>Start with a conversation,<br>not a proposal.</h2>
+    <a href="contact.html" class="btn">Get in touch</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap" style="display:flex; justify-content:space-between; width:100%; flex-wrap:wrap; gap:16px;">
+    <span>© 2026 Satisficed Consulting. Bengaluru, India.</span>
+    <span><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></span>
+  </div>
+</footer>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>

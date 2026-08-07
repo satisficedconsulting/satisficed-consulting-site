@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Satisficed Consulting</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+</head>
+<body>
+
+<nav class="solid">
+  <div class="wrap">
+    <div class="logo"><img src="assets/logo-mark.png" alt="Satisficed mark">
+      <div class="logo-text">
+        <span class="logo-word">SATISFICED</span>
+        <span class="logo-tagline">DECIDED WELL<span class="sep">&#8226;</span>STOPPED ON PURPOSE<span class="sep">&#8226;</span>DELIVERED ON TIME</span>
+      </div>
+    </div>
+    <div class="navlinks">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="work.html">Work</a>
+      <a href="about.html" class="active">About</a>
+      <a href="contact.html" class="nav-cta">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="page-header">
+  <div class="wrap">
+    <div class="eyebrow mono">About</div>
+    <h1>Built by someone who's run the programme, not just advised on it.</h1>
+  </div>
+</header>
+
+<section class="section">
+  <div class="wrap">
+    <div class="about-grid fade-in">
+      <div>
+        <p class="about-lead">Thrupthi has spent <b>19 years</b> in programme and delivery management across EMEA, APAC, and the US — inside large organisations and, more recently, building automation and operations platforms solo for clients who need results, not roadmaps.</p>
+        <p style="margin-top:28px; color:var(--paper-dim); font-size:15px; line-height:1.75;">Satisficed Consulting exists for one reason: most operational problems don't need a five-year transformation programme. They need the constraint identified, the fix built, and the rollout managed properly — in that order, without ceremony.</p>
+        <p style="margin-top:18px; color:var(--paper-dim); font-size:15px; line-height:1.75;">That approach comes from having sat on both sides of the table — running large-scale delivery inside global consultancies, and more recently, being the entire team: analyst, developer, and programme manager, for a client who just needed the problem solved.</p>
+      </div>
+      <div>
+        <div class="creds-row"><span>Education</span><span>MBA, Trinity Business School, Dublin</span></div>
+        <div class="creds-row"><span>Certifications</span><span>PMP · SAFe Agilist 5 · ITIL Foundation</span></div>
+        <div class="creds-row"><span>Prior organisations</span><span>Wipro · Accenture · Capgemini · BORN Group</span></div>
+        <div class="creds-row"><span>Based in</span><span>Bengaluru, India</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="wrap">
+    <div class="section-head fade-in">
+      <div>
+        <div class="tag mono">Track record</div>
+        <h2>Nineteen years, three continents.</h2>
+      </div>
+    </div>
+    <div class="timeline fade-in">
+      <div class="tl-row">
+        <div class="yr">2011–2026</div>
+        <div>
+          <h4>Programme & Delivery Management</h4>
+          <p>Senior delivery and consulting roles across Wipro, Accenture, RSA UK, Capgemini, and BORN Group — spanning eCommerce platform delivery, large-scale technology transformation, and enterprise programme management across EMEA, APAC, and the US.</p>
+        </div>
+      </div>
+      <div class="tl-row">
+        <div class="yr">Alongside</div>
+        <div>
+          <h4>Fitness Coaching</h4>
+          <p>Active as a Fitness/Yoga coach — a parallel thread alongside consulting work.</p>
+        </div>
+      </div>
+      <div class="tl-row">
+        <div class="yr">Ongoing</div>
+        <div>
+          <h4>Independent AI & Automation Consultant</h4>
+          <p>Built and delivered three separate applications solo for a Chartered Accountancy client — an internal operations platform, an employee onboarding app, and a financial statement generation tool — with measurable time and cost reductions across each. The work Satisficed Consulting carries forward.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap contact-inner fade-in">
+    <div class="tag mono" style="margin-bottom:20px;">Let's work together</div>
+    <h2>Tell me what's not<br>working right now.</h2>
+    <a href="contact.html" class="btn">Get in touch</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap" style="display:flex; justify-content:space-between; width:100%; flex-wrap:wrap; gap:16px;">
+    <span>© 2026 Satisficed Consulting. Bengaluru, India.</span>
+    <span><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></span>
+  </div>
+</footer>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
